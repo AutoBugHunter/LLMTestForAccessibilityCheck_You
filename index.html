@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Accessibility Tools</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="#browser-extensions">Browser Extensions</a></li>
+                <li><a href="#standalone-api-testing">Stand-alone API/Testing</a></li>
+                <li><a href="#engine-subscription-api">Engine Subscription API</a></li>
+                <li><a href="#aim-report">AIM Report</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <h1>Compare Accessibility Tools</h1>
+    <h1>Compare Accessibility Tools</h1>
 
-        <!-- Input field and "Check It" button -->
+    <section id="url-input">
+        <h2>Check Accessibility for a Website</h2>
+        <form>
+            <label for="website-url">Enter the URL:</label>
+            <input type="text" id="website-url" name="website-url">
+            <button type="submit">Check It</button>
+        </form>
+    </section>
 
-        <section>
-            <h2>List of Accessibility Testing Tools</h2>
-            <!-- Dummy logos for Wave, Achecker, and Lighthouse -->
-        </section>
+    <section id="accessibility-tools">
+        <h2>List of Accessibility Testing Tools</h2>
+        <ul>
+            <li>
+                <img src="dummy-logo.png" alt="Wave Logo">
+                <h3>Wave</h3>
+            </li>
+            <li>
+                <img src="dummy-logo.png" alt="Achecker Logo">
+                <h3>Achecker</h3>
+            </li>
+            <li>
+                <img src="dummy-logo.png" alt="Lighthouse Logo">
+                <h3>Lighthouse</h3>
+            </li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Table of Contents</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Accessible Check</th>
-                        <th>Accessibility Tool 1</th>
-                        <th>Accessibility Tool 2</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Table rows -->
-                </tbody>
-            </table>
-        </section>
-    </main>
+    <section id="comparison-table">
+        <h2>Comparison Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Accessible Check</th>
+                    <th>Accessibility Tool 1</th>
+                    <th>Accessibility Tool 2</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add table rows dynamically using JavaScript -->
+            </tbody>
+        </table>
+    </section>
 
     <footer>
-        <!-- Footer links -->
+        <ul>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#terms-of-use">Terms of Use</a></li>
+            <li><a href="https://www.unt.edu/index.html">UNT</a></li>
+        </ul>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
